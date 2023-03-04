@@ -687,7 +687,6 @@
 
             // Render question Data
             function DisplayQuestions(text,key){
-              console.log(key)
               if(document.getElementById(`${key}`)  === undefined || document.getElementById(`${key}`)  === null ){
                 count++;
                 questionCount.innerHTML=`${count} Questions`
@@ -707,6 +706,9 @@
               }
               questionDiv.appendChild(elemDiv);
 
+              }
+              else{
+              questionCount.innerHTML=`${count} Questions`;
               }
         }
       </script>
